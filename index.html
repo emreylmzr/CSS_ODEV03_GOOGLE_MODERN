@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5502/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Google</title>
+  <link rel="stylesheet" href="css/style.css"></head>
+  <body cz-shortcut-listen="true">
+    <div class="panel">
+      <nav>
+        <ul style="display: flex; justify-content: right; align-items: center;" class="header">
+          
+          <li style="margin: 8px" class="headerli">
+            <a href="https://mail.google.com/mail/?tab=wm&amp;authuser=0&amp;ogbl">Gmail</a>
+          </li><li style="margin: 8px; margin-left: -2px;" class="headerli">
+            <a href="https://www.google.com.tr/imghp?hl=en&amp;tab=wi&amp;authuser=0&amp;ogbl">Images</a>
+          </li>
+          
+          <li style="margin: 8px" class="headerli">
+            <a href="https://www.google.com.tr/intl/en/about/products?tab=wh"><img src="assets/appsbutton.svg" alt="" style="width: 16px; height: 16px; margin-right: 3px;"></a>
+          </li><li class="pic headerli">
+            <a href="https://github.com/emreylmzr" target="_blank" style="
+    /* justify-content: right; */
+"><img src="assets/profilepic.png" alt="" style="margin-right: 1px;"></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+        <img src="assets/logo.png" width="350px" alt="">
+      </div>
+      <div style="border-radius: 25px 25px" class="search-area">
+        <div class="search">
+          <div class="search-img">
+            
+            
+            <span>
+              <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+              </svg>
+            </span>
+          </div>
+  
+          <div class="input-enter">
+            <div class="input-area" >
+              <input type="text" class="input" maxlength="2048" autofocus="true" style="border: none;">
+            </div>
+          </div>
+          <img src="assets/voicelogo.png" width="30px" style="margin-top: auto;margin-bottom: auto;margin-right: auto;"></img>
+        </div>
+      </div>
+<br>
+      <div style="display: flex; justify-content: center; align-items: center;" class="buttons">
+        <a href="http://127.0.0.1:5502/"><button class="googlesearch">Google Search</button></a>
+        <a href="http://127.0.0.1:5502/"><button class="feelinglucky">I'm Feeling Lucky</button></a>
+      </div>
+    </div>
+
+    <nav style="background-color: #F2F2F2;">
+      <ul class="footer">
+        <li class="footerli">
+          <a href="https://www.google.com/intl/en_tr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1">Advertising</a>
+        </li>
+        <li class="footerli">
+          <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1">Business</a>
+        </li>
+        <li class="footerli">
+          <a href="https://about.google/?utm_source=google-TR&amp;utm_medium=referral&amp;utm_campaign=hp-footer&amp;fg=1">About</a>
+        </li>
+        <li class="footerli">
+          <a href="https://google.com/search/howsearchworks/?fg=1">How Search works</a>
+        </li>
+
+        <li class="footerli" style="float: right; margin-right: 35px">
+          <a href="https://www.google.com/preferences?hl=en">Settings</a>
+        </li>
+
+        <li class="footerli" style="float: right">
+          <a href="https://policies.google.com/terms?hl=en-TR&amp;fg=1">Terms</a>
+        </li>
+
+        <li class="footerli" style="float: right">
+          <a href="https://policies.google.com/privacy?hl=en-TR&amp;fg=1">Privacy</a>
+        </li>
+      </ul>
+    </nav>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
